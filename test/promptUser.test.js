@@ -9,6 +9,9 @@ describe('promptUser', () => {
         jest.resetAllMocks();
     });
 
-    
+    test('should return user inputs correctly when all fields are valid', async () => {
+        // Mock the return value of inquirer.prompt
+
+    });
 
 });
