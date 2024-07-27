@@ -5,6 +5,10 @@ const { promptUser } = require('../lib/promptUser');
 jest.mock('inquirer');
 
 describe('promptUser', () => {
+    afterEach(() => {
+        jest.resetAllMocks();
+    });
 
+    
 
 });
