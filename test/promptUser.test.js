@@ -18,6 +18,16 @@ describe('promptUser', () => {
             shapeColor: '#00FF00'
         });
 
+        // Call the function
+        const answers = await promptUser();
+
+        // Verify the returned values
+        expect(answers).toEqual({
+            logoName: 'ABC',
+            textColor: 'blue',
+            shapeType: 'Circle',
+            shapeColor: '#00FF00'
+        });
     });
 
 });
