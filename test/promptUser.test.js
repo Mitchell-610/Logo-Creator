@@ -11,6 +11,12 @@ describe('promptUser', () => {
 
     test('should return user inputs correctly when all fields are valid', async () => {
         // Mock the return value of inquirer.prompt
+        inquirer.prompt.mockResolvedValue({
+            logoName: 'ABC',
+            textColor: 'blue',
+            shapeType: 'Circle',
+            shapeColor: '#00FF00'
+        });
 
     });
 
